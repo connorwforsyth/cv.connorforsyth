@@ -53,7 +53,7 @@
         @media (min-width: 640px){
           font-size: 14px;
         }
-        
+
         font-family: Geist;
       }
 
@@ -77,6 +77,9 @@
         size: A4;
       }
 
+      .page {
+        box-shadow: none;
+      }
       @media (min-width: 210mm) {
         body {
           --tw-bg-opacity: 1; background-color: rgb(245 245 245 / var(--tw-bg-opacity)) !important;
@@ -89,6 +92,7 @@
           margin-left: auto;
           margin-right: auto;
           padding: 10mm;
+          --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06)); filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
         }
       }
 
@@ -116,7 +120,7 @@
   <body
     class="flex w-full flex-col gap-8 text-pretty bg-white p-4  *:flex *:flex-col *:gap-8 py-24 lg:p-24 [&_a]:underline [&_h2]:border-t [&_h2]:pt-4 [&_h2]:font-mono [&_h2]:text-xs [&_h2]:font-medium [&_h2]:uppercase [&_h2]:text-neutral-500 [&_i]:font-mono [&_i]:text-xs [&_i]:not-italic [&_i]:text-neutral-500 [&_i]:before:content-[''] [&_section]:flex [&_section]:flex-col [&_section]:gap-2 [&_time]:font-mono [&_time]:text-xs [&_time]:uppercase">
     <button aria-label="print" id="print" class="print-button fixed right-4 top-4 z-10 rounded-md border border-neutral-500 bg-neutral-100 px-2 py-1 font-mono text-xs shadow-inner shadow-md" onclick="window.print()" ontouchstart="window.print()">💾</button>
-    <div class="page md:shadow-md">
+    <div class="page ">
       <header class="flex flex-col gap-4 [&_a]:text-blue-800">
         <h1 class="py-2 text-base font-semibold">Connor Forsyth</h1>
         <nav class="text-sm">
@@ -379,7 +383,7 @@
         </section>
       </div>
     </div>
-    <div class="page md:shadow-md">
+    <div class="page ">
       <div class="grid gap-8 sm:grid-cols-2">
         <section class="sm:col-span-2">
           <h2 class="font-medium">🎓 Education</h2>
