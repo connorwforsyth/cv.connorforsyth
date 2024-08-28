@@ -87,7 +87,7 @@
 
       @media print {
         body {
-          padding: 0px !important;
+          padding: 0 !important;
           background-color: white;
         }
         .print-button {
@@ -97,14 +97,14 @@
         .page {
           box-shadow: none;
           margin: 0;
-          padding: 0;
+          padding: 10mm !important;
         }
       }
     </style>
   </head>
   <body
     class="flex w-full flex-col gap-8 text-pretty bg-white p-4 *:flex *:flex-col *:gap-8 sm:bg-neutral-100 sm:p-24 sm:p-8 [&_a]:underline [&_h2]:border-t [&_h2]:pt-4 [&_h2]:font-mono [&_h2]:text-xs [&_h2]:font-medium [&_h2]:uppercase [&_h2]:text-neutral-500 [&_i]:font-mono [&_i]:text-xs [&_i]:not-italic [&_i]:text-neutral-500 [&_i]:before:content-[''] [&_section]:flex [&_section]:flex-col [&_section]:gap-2 [&_time]:font-mono [&_time]:text-xs [&_time]:uppercase">
-    <button aria-label="print" id="print" class="print-button fixed right-4 top-4 rounded-md border border-neutral-500 bg-neutral-100 px-2 py-1 font-mono text-xs shadow-inner shadow-md" onclick="window.print()">💾</button>
+    <button aria-label="print" id="print" class="print-button fixed right-4 top-4 z-10 rounded-md border border-neutral-500 bg-neutral-100 px-2 py-1 font-mono text-xs shadow-inner shadow-md" onclick="window.print()" ontouchstart="window.print()">💾</button>
     <div class="page md:shadow-md">
       <header class="flex flex-col gap-4 [&_a]:text-blue-800">
         <h1 class="py-2 text-base font-semibold">Connor Forsyth</h1>
