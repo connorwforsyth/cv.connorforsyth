@@ -75,7 +75,7 @@
         .page {
         @media (min-width: 768px) {
           max-width: 210mm;
-          max-height: 297mm;
+          height: 297mm;
           background-color: white;
           padding: 1rem;
           margin-left: auto;
@@ -88,17 +88,17 @@
       @media print {
         body {
           padding: 0 !important;
-          background-color: white;
+          background-color: transparent !important;
         }
         .print-button {
-
           display: none !important;
         }
         .page {
+          background-color: transparent !important;
           box-shadow: none !important;
           max-width: 210mm;
           max-height: 297mm;
-          margin: 0;
+          margin: 0 !important;
           padding: 10mm !important;
         }
       }
