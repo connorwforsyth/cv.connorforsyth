@@ -111,15 +111,14 @@
           box-shadow: none !important;
           padding: 10mm !important;
         }
-        
+
       }
-    </style>
     </style>
   </head>
   <body
-    class="flex w-full flex-col gap-8 text-pretty bg-white p-4  *:flex *:flex-col *:gap-8 py-24 lg:p-24 [&_a]:underline [&_h2]:border-t [&_h2]:pt-4 [&_h2]:font-mono [&_h2]:text-xs [&_h2]:font-medium [&_h2]:uppercase [&_h2]:text-neutral-500 [&_i]:font-mono [&_i]:text-xs [&_i]:not-italic [&_i]:text-neutral-500 [&_i]:before:content-[''] [&_section]:flex [&_section]:flex-col [&_section]:gap-2 [&_time]:font-mono [&_time]:text-xs [&_time]:uppercase">
-    <button aria-label="print" id="print" class="print-button fixed right-4 top-4 z-10 rounded-md border border-neutral-500 bg-neutral-100 px-2 py-1 font-mono text-xs shadow-inner shadow-md" onclick="window.print()" ontouchstart="window.print()">💾</button>
-    <div class="page ">
+    class="flex w-full flex-col gap-8 text-pretty bg-white p-4 py-24 *:flex *:flex-col *:gap-8 lg:p-24 [&_a]:underline [&_h2]:border-t [&_h2]:pt-4 [&_h2]:font-mono [&_h2]:text-xs [&_h2]:font-medium [&_h2]:uppercase [&_h2]:text-neutral-500 [&_i]:font-mono [&_i]:text-xs [&_i]:not-italic [&_i]:text-neutral-500 [&_i]:before:content-[''] [&_section]:flex [&_section]:flex-col [&_section]:gap-2 [&_time]:font-mono [&_time]:text-xs [&_time]:uppercase">
+    <button aria-label="print" id="print" class="print-button right-4 top-4 z-10 hidden rounded-md border border-neutral-500 bg-neutral-100 px-2 py-1 font-mono text-xs shadow-inner shadow-md lg:fixed" onclick="window.print()" ontouchstart="window.print()">💾</button>
+    <div class="page">
       <header class="flex flex-col gap-4 [&_a]:text-blue-800">
         <h1 class="py-2 text-base font-semibold">Connor Forsyth</h1>
         <nav class="text-sm">
@@ -161,7 +160,7 @@
       <section>
         <h2>💻 Work Experience</h2>
         <ul
-          class="*::place-items-baseline grid grid-cols-1 gap-4 text-sm *:grid-cols-[4.5rem_1fr] sm:*:grid [&_a]:text-neutral-800 [&_div]:col-span-2 [&_h3]:font-medium sm:[&_h3]:inline-flex [&_p]:pt-2 [&_ul>li]:relative [&_ul>li]:pl-4 [&_ul>li]:before:absolute [&_ul>li]:before:left-0 [&_ul>li]:before:top-0 [&_ul>li]:before:h-[0px] [&_ul>li]:before:w-4 [&_ul>li]:before:bg-neutral-400 [&_ul>li]:before:text-neutral-500 [&_ul>li]:before:content-['↳'] [&_ul]:grid [&_ul]:gap-x-8 [&_ul]:gap-y-2 [&_ul]:py-2 sm:[&_ul]:grid-cols-2">
+          class="grid grid-cols-1 gap-4 text-sm *:grid-cols-[4.5rem_1fr] *:items-baseline sm:*:grid [&_a]:text-neutral-800 [&_div]:col-span-2 [&_h3]:font-medium sm:[&_h3]:inline-flex [&_p]:pt-2 [&_ul>li]:relative [&_ul>li]:pl-4 [&_ul>li]:before:absolute [&_ul>li]:before:left-0 [&_ul>li]:before:top-0 [&_ul>li]:before:h-[0px] [&_ul>li]:before:w-4 [&_ul>li]:before:bg-neutral-400 [&_ul>li]:before:text-neutral-500 [&_ul>li]:before:content-['↳'] [&_ul]:grid [&_ul]:gap-x-8 [&_ul]:gap-y-2 [&_ul]:py-2 sm:[&_ul]:grid-cols-2">
           <li>
             <time>2022-Now</time>
             <h3 class="w-full items-baseline justify-between gap-1.5">
@@ -382,7 +381,7 @@
         </section>
       </div>
     </div>
-    <div class="page ">
+    <div class="page">
       <div class="grid gap-8 sm:grid-cols-2">
         <section class="sm:col-span-2">
           <h2 class="font-medium">🎓 Education</h2>
