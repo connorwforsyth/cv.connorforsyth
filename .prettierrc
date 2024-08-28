@@ -1,6 +1,1 @@
-{
-  "tabWidth": 2,
-  "useTabs": false,
-  "printWidth": 300,
-  "htmlWhitespaceSensitivity": "css"
-}
+{ "tabWidth": 2, "useTabs": false, "printWidth": 300, "bracketSameLine": true, "embeddedLanguageFormatting": "off", "plugins": ["prettier-plugin-tailwindcss"] }
