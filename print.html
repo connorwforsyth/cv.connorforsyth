@@ -68,11 +68,11 @@
 
         background-image: linear-gradient(80deg, color-mix(in srgb, var(--color), transparent 30%), color-mix(in srgb, var(--color), transparent 90%) 4%, color-mix(in srgb, var(--color), transparent 70%) 94%, color-mix(in srgb, var(--color), transparent 30%));
       }
-      .page {
+
         @page {
-          size: A4;
-          padding: 10mm;
+          size: 210mm 297mm;
         }
+        .page {
         @media (min-width: 768px) {
           max-width: 210mm;
           height: 297mm;
@@ -87,25 +87,24 @@
 
       @media print {
         body {
-          padding: 0px;
+          padding: 0px !important;
           background-color: transparent;
         }
         .print-button {
+
           display: none !important;
         }
         .page {
-          width: 210mm !important;
-          height: 297mm !important;
-          padding: 0mm !important;
-          margin: 0 !important;
-          box-shadow: none !important;
+          box-shadow: none;
+          margin: 0;
+          padding: 0;
         }
       }
     </style>
   </head>
   <body
-    class="flex w-full flex-col gap-8 text-pretty bg-white p-4 *:flex *:flex-col *:gap-8 sm:p-8 md:bg-neutral-100 md:p-24 [&_a]:underline [&_h2]:border-t [&_h2]:pt-4 [&_h2]:font-mono [&_h2]:text-xs [&_h2]:font-medium [&_h2]:uppercase [&_h2]:text-neutral-500 [&_i]:font-mono [&_i]:text-xs [&_i]:not-italic [&_i]:text-neutral-500 [&_i]:before:content-[''] [&_section]:flex [&_section]:flex-col [&_section]:gap-2 [&_time]:font-mono [&_time]:text-xs [&_time]:uppercase">
-    <button aria-label="print" id="print" class="print-button fixed left-4 top-4 rounded-md border border-neutral-500 bg-neutral-100 px-2 py-1 font-mono text-xs shadow-inner shadow-md" onclick="window.print()">💾</button>
+    class="flex w-full flex-col gap-8 text-pretty bg-white p-4 *:flex *:flex-col *:gap-8 sm:bg-neutral-100 sm:p-24 sm:p-8 [&_a]:underline [&_h2]:border-t [&_h2]:pt-4 [&_h2]:font-mono [&_h2]:text-xs [&_h2]:font-medium [&_h2]:uppercase [&_h2]:text-neutral-500 [&_i]:font-mono [&_i]:text-xs [&_i]:not-italic [&_i]:text-neutral-500 [&_i]:before:content-[''] [&_section]:flex [&_section]:flex-col [&_section]:gap-2 [&_time]:font-mono [&_time]:text-xs [&_time]:uppercase">
+    <button aria-label="print" id="print" class="print-button fixed right-4 top-4 rounded-md border border-neutral-500 bg-neutral-100 px-2 py-1 font-mono text-xs shadow-inner shadow-md" onclick="window.print()">💾</button>
     <div class="page md:shadow-md">
       <header class="flex flex-col gap-4 [&_a]:text-blue-800">
         <h1 class="py-2 text-base font-semibold">Connor Forsyth</h1>
@@ -271,7 +270,7 @@
           </li>
         </ul>
       </section>
-      <div class="grid gap-8 md:grid-cols-2">
+      <div class="grid gap-8 sm:grid-cols-2">
         <section>
           <h2 class="font-medium">🧢 Side Projects</h2>
           <ul class="gap-2 *:*:*:inline *:*:inline *:grid *:grid-cols-[4.5rem_1fr] *:place-items-baseline *:*:*:after:text-neutral-500 *:*:*:after:content-['_/_'] [&_li:last-child]:after:content-none [&_ul_>_li:last-child]:after:content-['.'] [&_ul_>_li]:text-xs">
@@ -370,8 +369,8 @@
       </div>
     </div>
     <div class="page md:shadow-md">
-      <div class="grid gap-8 md:grid-cols-2">
-        <section class="md:col-span-2">
+      <div class="grid gap-8 sm:grid-cols-2">
+        <section class="sm:col-span-2">
           <h2 class="font-medium">🎓 Education</h2>
           <ul class="gap-2 *:*:*:inline *:*:inline *:grid *:grid-cols-[4.5rem_1fr] *:place-items-baseline *:*:*:after:text-neutral-500 *:*:*:after:content-['_/_'] [&_ul_>_li:last-child]:after:content-['.'] [&_ul_>_li]:text-xs">
             <li>
