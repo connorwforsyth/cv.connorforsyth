@@ -1,5 +1,3 @@
-import "./main.css";
-
 !(function (t, e) {
   var o, n, p, r;
   e.__SV ||
