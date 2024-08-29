@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["*.{html,js,ts,jsx,tsx}", "main.css"],
+  content: ["./public/*.html", "./src/main.css"],
   theme: {
     fontFamily: {
       sans: ["Geist", "sans-serif"],
